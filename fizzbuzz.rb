@@ -17,9 +17,10 @@ def fizzbuzz(num)
 #数値が3の倍数であり5の倍数でもある場合は、戻り値は”FizzBuzz”
 #上記のどれも満たさない場合は、その数値自体を戻り値にする
 end
+return num
 end
 # 以下は動作確認用の記述です
-(1..100).each do |i|
+(1..num_max).each do |i|
 fizzbuzz(i)
 end
 
