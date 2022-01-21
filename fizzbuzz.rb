@@ -2,13 +2,13 @@ num_max =100
 
 def fizzbuzz(num)
     if num%15==0
-        puts"FizzBuzz"
+        "FizzBuzz"
     elsif num%5==0
-        puts"buzz"
+        "buzz"
     elsif num%3==0
-        puts "fizz"
+        "fizz"
     else
-        puts num.to_s
+        num.to_s
 
   #特定の正の整数値を引数として受け取ります
 #その数値によって戻り値が変わるようにしてください（条件は下記のとおりです）
@@ -17,10 +17,12 @@ def fizzbuzz(num)
 #数値が3の倍数であり5の倍数でもある場合は、戻り値は”FizzBuzz”
 #上記のどれも満たさない場合は、その数値自体を戻り値にする
 end
-return num
 end
+#puts fizzbuzz(1)
+#puts fizzbuzz(15)
+
 # 以下は動作確認用の記述です
 (1..num_max).each do |i|
-fizzbuzz(i)
+puts fizzbuzz(i)
 end
 
